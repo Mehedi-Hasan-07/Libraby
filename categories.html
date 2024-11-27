@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | Our Library</title>
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .categories-container {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .category-card {
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-card img {
+            border-radius: 10px 10px 0 0;
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .category-card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-card-body h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .category-card-body p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .btn-view {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .btn-view:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Our Library</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+                <li class="nav-item"><a class="nav-link" href="signup.html">Sign up</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Categories Section -->
+    <section class="categories-container text-center">
+        <div class="container">
+            <h1 class="mb-5">Explore Our Categories</h1>
+            <div class="row">
+
+                <!-- Category 1 -->
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="images/non-fic.jfif" class="card-img-top" alt="Category 1">
+                        <div class="card-body category-card-body">
+                            <h5 class="card-title">Category 1</h5>
+                            <p class="card-text">Explore books from Category 1, ranging from Fiction to Non-fiction.</p>
+                            <a href="category-detail.html" class="btn-view">View Books</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="images/science.jpg" class="card-img-top" alt="Category 2">
+                        <div class="card-body category-card-body">
+                            <h5 class="card-title">Category 2</h5>
+                            <p class="card-text">Discover a wide range of books in Category 2, from History to Science.</p>
+                            <a href="category-detail.html" class="btn-view">View Books</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="images/fictional.jfif" class="card-img-top" alt="Category 3">
+                        <div class="card-body category-card-body">
+                            <h5 class="card-title">Category 3</h5>
+                            <p class="card-text">A diverse selection of books in Category 3, including Comics, Novels, and more.</p>
+                            <a href="category-detail.html" class="btn-view">View Books</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Our Library. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, jQuery, and Popper.js from CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
